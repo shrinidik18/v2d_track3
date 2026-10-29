@@ -1,0 +1,200 @@
+_target_: flash_chord.configuration.make_fixed_curriculum
+
+# 80M compressed VOC schedule (VOC contact-gated at train time), object_contact reward 10 throughout phase 1. No reward term from the reconstructed hand (hand keypoints/joints, wrench support,
+# missed/unintended contact all 0); video hand-ray guidance (weight 10) until 55.05M, then object tracking only.
+thresholds: [6291456, 11010048, 15728640, 20447232, 25165824, 29884416, 34603008, 39319552, 44038144, 55050240, 64000000, 79998976]
+
+stages:
+  - _target_: flash_chord.configuration.make_curriculum_stage
+    voc_scale: 1.0
+    objective_weights:
+      object_keypoints: 20.0
+      hand_keypoints: 0.0
+      hand_joint_pos: 0.0
+      contact_wrench_support: 0.0
+      missed_contact: 0.0
+      unintended_contact: 0.0
+      termination: -100.0
+      action_rate_l2: -0.005
+      action_l2: -0.002
+      contact_force_l2: 0.0
+      force_closure: 0.0
+      object_contact: 10.0
+      hand_ray: 10.0
+  - _target_: flash_chord.configuration.make_curriculum_stage
+    voc_scale: 0.75
+    objective_weights:
+      object_keypoints: 20.0
+      hand_keypoints: 0.0
+      hand_joint_pos: 0.0
+      contact_wrench_support: 0.0
+      missed_contact: 0.0
+      unintended_contact: 0.0
+      termination: -100.0
+      action_rate_l2: -0.005
+      action_l2: -0.002
+      contact_force_l2: 0.0
+      force_closure: 0.0
+      object_contact: 10.0
+      hand_ray: 10.0
+  - _target_: flash_chord.configuration.make_curriculum_stage
+    voc_scale: 0.5
+    objective_weights:
+      object_keypoints: 20.0
+      hand_keypoints: 0.0
+      hand_joint_pos: 0.0
+      contact_wrench_support: 0.0
+      missed_contact: 0.0
+      unintended_contact: 0.0
+      termination: -100.0
+      action_rate_l2: -0.005
+      action_l2: -0.002
+      contact_force_l2: 0.0
+      force_closure: 0.0
+      object_contact: 10.0
+      hand_ray: 10.0
+  - _target_: flash_chord.configuration.make_curriculum_stage
+    voc_scale: 0.25
+    objective_weights:
+      object_keypoints: 20.0
+      hand_keypoints: 0.0
+      hand_joint_pos: 0.0
+      contact_wrench_support: 0.0
+      missed_contact: 0.0
+      unintended_contact: 0.0
+      termination: -100.0
+      action_rate_l2: -0.005
+      action_l2: -0.002
+      contact_force_l2: 0.0
+      force_closure: 0.0
+      object_contact: 10.0
+      hand_ray: 10.0
+  - _target_: flash_chord.configuration.make_curriculum_stage
+    voc_scale: 0.1
+    objective_weights:
+      object_keypoints: 20.0
+      hand_keypoints: 0.0
+      hand_joint_pos: 0.0
+      contact_wrench_support: 0.0
+      missed_contact: 0.0
+      unintended_contact: 0.0
+      termination: -100.0
+      action_rate_l2: -0.005
+      action_l2: -0.002
+      contact_force_l2: 0.0
+      force_closure: 0.0
+      object_contact: 10.0
+      hand_ray: 10.0
+  - _target_: flash_chord.configuration.make_curriculum_stage
+    voc_scale: 0.05
+    objective_weights:
+      object_keypoints: 20.0
+      hand_keypoints: 0.0
+      hand_joint_pos: 0.0
+      contact_wrench_support: 0.0
+      missed_contact: 0.0
+      unintended_contact: 0.0
+      termination: -100.0
+      action_rate_l2: -0.005
+      action_l2: -0.002
+      contact_force_l2: 0.0
+      force_closure: 0.0
+      object_contact: 10.0
+      hand_ray: 10.0
+  - _target_: flash_chord.configuration.make_curriculum_stage
+    voc_scale: 0.025
+    objective_weights:
+      object_keypoints: 20.0
+      hand_keypoints: 0.0
+      hand_joint_pos: 0.0
+      contact_wrench_support: 0.0
+      missed_contact: 0.0
+      unintended_contact: 0.0
+      termination: -100.0
+      action_rate_l2: -0.005
+      action_l2: -0.002
+      contact_force_l2: 0.0
+      force_closure: 0.0
+      object_contact: 10.0
+      hand_ray: 10.0
+  - _target_: flash_chord.configuration.make_curriculum_stage
+    voc_scale: 0.01
+    objective_weights:
+      object_keypoints: 20.0
+      hand_keypoints: 0.0
+      hand_joint_pos: 0.0
+      contact_wrench_support: 0.0
+      missed_contact: 0.0
+      unintended_contact: 0.0
+      termination: -100.0
+      action_rate_l2: -0.005
+      action_l2: -0.002
+      contact_force_l2: 0.0
+      force_closure: 0.0
+      object_contact: 10.0
+      hand_ray: 10.0
+  - _target_: flash_chord.configuration.make_curriculum_stage
+    voc_scale: 0.0
+    objective_weights:
+      object_keypoints: 20.0
+      hand_keypoints: 0.0
+      hand_joint_pos: 0.0
+      contact_wrench_support: 0.0
+      missed_contact: 0.0
+      unintended_contact: 0.0
+      termination: -100.0
+      action_rate_l2: -0.005
+      action_l2: -0.002
+      contact_force_l2: 0.0
+      force_closure: 0.0
+      object_contact: 10.0
+      hand_ray: 10.0
+  - _target_: flash_chord.configuration.make_curriculum_stage
+    voc_scale: 0.0
+    objective_weights:
+      object_keypoints: 20.0
+      hand_keypoints: 0.0
+      hand_joint_pos: 0.0
+      contact_wrench_support: 0.0
+      missed_contact: 0.0
+      unintended_contact: 0.0
+      termination: -100.0
+      action_rate_l2: -0.005
+      action_l2: -0.002
+      contact_force_l2: 0.0
+      force_closure: 0.0
+      object_contact: 10.0
+      hand_ray: 10.0
+  - _target_: flash_chord.configuration.make_curriculum_stage
+    voc_scale: 0.0
+    objective_weights:
+      object_keypoints: 20.0
+      hand_keypoints: 0.0
+      hand_joint_pos: 0.0
+      contact_wrench_support: 0.0
+      missed_contact: 0.0
+      unintended_contact: 0.0
+      termination: -100.0
+      action_rate_l2: -0.005
+      action_l2: -0.002
+      contact_force_l2: 0.0
+      force_closure: 0.0
+      object_contact: 10.0
+      hand_ray: 0.0
+  - _target_: flash_chord.configuration.make_curriculum_stage
+    voc_scale: 0.0
+    objective_weights:
+      object_keypoints: 20.0
+      hand_keypoints: 0.0
+      hand_joint_pos: 0.0
+      contact_wrench_support: 0.0
+      missed_contact: 0.0
+      unintended_contact: 0.0
+      termination: -100.0
+      action_rate_l2: -0.005
+      action_l2: -0.002
+      contact_force_l2: 0.0
+      force_closure: 0.0
+      object_contact: 10.0
+      hand_ray: 0.0
+    reset_to_first_frame_probability: 0.5

@@ -1,0 +1,13 @@
+# Grasp-acquisition + object-perturbed recovery resets (s0/s0_reset.py). extras_path set per run.
+_target_: s0_reset.S0ResetConfig
+reset_finger_openness: 0.7
+always_reset_to_first_frame: false
+reset_to_first_frame_probability: 0.1
+first_frame_voc_threshold: 0.1
+voc_decay_steps: 20
+voc_decay_mode: step
+seed: 42
+extras_path: ???
+perturb_probability: 0.2
+perturb_position_m: 0.02
+perturb_yaw_deg: 10.0

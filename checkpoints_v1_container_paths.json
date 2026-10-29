@@ -1,0 +1,22 @@
+{
+ "1": "/runs/ep1_v1_cleanedref_ray5decay/p1_96M/policy_92274688.safetensors",
+ "3": "/runs/ep3_v1_cleanedref_ray5decay/p1_96M/policy_96468992.safetensors",
+ "5": "/runs/ep5_v1_cleanedref_ray5decay/p1_96M/policy_96776192.safetensors",
+ "6": "/runs/ep6_v1_cleanedref_ray5decay/p1_96M/policy_88080384.safetensors",
+ "8": "/runs/ep8_v1_cleanedref_ray5decay/p1_96M/policy_92274688.safetensors",
+ "10": "/runs/ep10_v1_cleanedref_ray5decay/p1_96M/policy_62914560.safetensors",
+ "14": "/runs/ep14_v1_cleanedref_ray5decay/p1_96M/policy_75497472.safetensors",
+ "15": "/runs/ep15_v1_cleanedref_ray5decay/p1_96M/policy_83886080.safetensors",
+ "16": "/runs/ep16_v1_cleanedref_ray5decay/p1_96M/policy_79691776.safetensors",
+ "19": "/runs/ep19_v1_cleanedref_ray5decay/p1_96M/policy_54525952.safetensors",
+ "20": "/runs/ep20_v1_cleanedref_ray5decay/p1_96M/policy_12582912.safetensors",
+ "25": "/runs/ep25_v1_cleanedref_ray5decay/p1_96M/policy_58720256.safetensors",
+ "28": "/runs/ep28_v1_cleanedref_ray5decay/p1_96M/policy_12582912.safetensors",
+ "30": "/runs/ep30_v1_cleanedref_ray5decay/p1_96M/policy_88080384.safetensors",
+ "32": "/runs/ep32_v1_cleanedref_ray5decay/p1_96M/policy_96468992.safetensors",
+ "33": "/runs/ep33_v1_cleanedref_ray5decay/p1_96M/policy_50331648.safetensors",
+ "35": "/runs/ep35_v1_cleanedref_ray5decay/p1_96M/policy_71303168.safetensors",
+ "36": "/runs/ep36_v1_cleanedref_ray5decay/p1_96M/policy_88080384.safetensors",
+ "37": "/runs/ep37_v1_cleanedref_ray5decay/p1_96M/policy_67108864.safetensors",
+ "38": "/runs/ep38_v1_cleanedref_ray5decay/p1_96M/policy_62914560.safetensors"
+}

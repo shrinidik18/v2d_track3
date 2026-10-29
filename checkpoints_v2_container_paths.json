@@ -1,0 +1,13 @@
+{
+ "1": "/runs/ep1_v2recon_ray5decay/p1_96M/policy_88080384.safetensors",
+ "3": "/runs/ep3_v2recon_ray5decay/p1_96M/policy_75497472.safetensors",
+ "5": "/runs/ep5_v2recon_ray5decay/p1_96M/policy_62914560.safetensors",
+ "15": "/runs/ep15_v2recon_ray5decay/p1_96M/policy_29360128.safetensors",
+ "16": "/runs/ep16_v2recon_ray5decay/p1_96M/policy_29360128.safetensors",
+ "19": "/runs/ep19_v2recon_ray5decay/p1_96M/policy_41943040.safetensors",
+ "20": "/runs/ep20_v2recon_ray5decay/p1_96M/policy_67108864.safetensors",
+ "28": "/runs/ep28_v2recon_ray5decay/p1_96M/policy_92274688.safetensors",
+ "30": "/runs/ep30_v2recon_ray5decay/p1_96M/policy_58720256.safetensors",
+ "36": "/runs/ep36_v2recon_ray5decay/p1_96M/policy_79691776.safetensors",
+ "37": "/runs/ep37_v2recon_ray5decay/p1_96M/policy_71303168.safetensors"
+}

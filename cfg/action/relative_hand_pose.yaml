@@ -1,0 +1,15 @@
+# Reference-free hand action: integrated deltas on the robot's own wrist / finger targets (s0_action.py).
+_target_: s0_action.RelativeHandPoseConfig
+wrist_pos_step: 0.03
+wrist_ori_step: 0.10
+finger_joint_step: 0.10
+ema: 0.3
+wrist_kp: 25.0
+wrist_tau_max: 45.0
+delay:
+  _target_: flash_chord.runtime.delay.TargetDelayConfig
+  min_steps: 0
+  max_steps: 0
+  seed: 0
+input_mode: normalized
+normalized_mapping: linear
